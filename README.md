@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # asiyen02.github.io
-=======
+
 # Anirudh Iyengar's personal website
 
 A small static academic website adapted from [Jon Barron's template](https://github.com/jonbarron/jonbarron.github.io). Content is based on the supplied résumé. No build step or JavaScript is required.
