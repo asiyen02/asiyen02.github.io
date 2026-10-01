@@ -1,0 +1,51 @@
+/* Typography and proportions based on jonbarron.github.io. */
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/lato-regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('fonts/lato-bold.woff2') format('woff2');
+}
+@font-face {
+  font-family: Lato;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/lato-italic.woff2') format('woff2');
+}
+* { box-sizing: border-box; }
+body { margin: 8px; background: white; color: #000; font-family: Lato, Verdana, Helvetica, sans-serif; font-size: 14px; line-height: normal; }
+main { max-width: 800px; margin: 0 auto; }
+a { color: #1772d0; text-decoration: none; }
+a:hover, a:focus { color: #f09228; }
+a:focus-visible { outline: 2px solid #1772d0; outline-offset: 3px; }
+p { margin: 14px 0; }
+.intro { display: grid; grid-template-columns: 63% 37%; align-items: center; }
+.bio { padding: 20px; }
+.name { margin: 0; padding-top: 20px; text-align: center; font-size: 32px; font-weight: 400; }
+.portrait { width: calc(100% - 40px); height: auto; margin: 20px; border-radius: 50%; }
+.contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 14px 0; }
+section { padding: 16px; scroll-margin-top: 16px; }
+h2 { margin: 0; font-size: 22px; font-weight: 400; }
+h3 { margin: 0; font-size: 14px; font-weight: 700; }
+.entry { padding: 16px 0; }
+.entry p { margin: 14px 0 0; }
+.entry .affiliation { margin: 3px 0 0; }
+.entry .dates { margin: 3px 0 0; font-style: italic; }
+footer { padding: 20px 16px; text-align: right; font-size: 12px; }
+.skip-link { position: absolute; top: -100px; left: 12px; padding: 8px 12px; background: white; }
+.skip-link:focus { top: 8px; }
+@media (max-width: 600px) {
+  .intro { grid-template-columns: 1fr; }
+  .portrait { grid-row: 1; width: 150px; margin: 20px auto 0; }
+  .bio { padding: 16px; }
+  .name { padding-top: 8px; }
+  footer { text-align: center; }
+}
